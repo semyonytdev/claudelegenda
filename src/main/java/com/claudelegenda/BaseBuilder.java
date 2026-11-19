@@ -354,6 +354,17 @@ public final class BaseBuilder {
                 new ItemStack(Items.STICK, 64),
                 new ItemStack(Items.GOLD_INGOT, 3),
                 new ItemStack(Items.IRON_INGOT, 1),
+                gear(reg, Items.NETHERITE_AXE,
+                        e(Enchantments.EFFICIENCY, 8), e(Enchantments.SHARPNESS, 7), e(Enchantments.UNBREAKING, 5),
+                        e(Enchantments.MENDING, 1)),
+                new ItemStack(Items.COOKED_BEEF, 64),
+                new ItemStack(Items.COOKED_BEEF, 64),
+                new ItemStack(Items.GOLDEN_CARROT, 64),
+                new ItemStack(Items.ENCHANTED_GOLDEN_APPLE, 8),
+                new ItemStack(Items.TOTEM_OF_UNDYING, 1),
+                new ItemStack(Items.TOTEM_OF_UNDYING, 1),
+                new ItemStack(Items.TOTEM_OF_UNDYING, 1),
+                new ItemStack(Items.TOTEM_OF_UNDYING, 1),
                 Books.thanks());
     }
 
