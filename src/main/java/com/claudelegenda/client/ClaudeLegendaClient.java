@@ -11,7 +11,6 @@ import net.fabricmc.fabric.api.client.networking.v1.ClientPlayConnectionEvents;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.option.ParticlesMode;
 import net.minecraft.client.particle.FlameParticle;
 import net.minecraft.client.render.GameRenderer;
 import net.minecraft.client.world.ClientWorld;
@@ -83,11 +82,11 @@ public class ClaudeLegendaClient implements ClientModInitializer {
     // ------------------------------------------------------------------ звёзды
 
     private static void spawnStars(MinecraftClient client) {
-        ParticlesMode mode = client.options.getParticles().getValue();
-        if (mode == ParticlesMode.MINIMAL) {
+        String mode = ((Enum<?>) client.options.getParticles().getValue()).name();
+        if (mode.equals("MINIMAL")) {
             return; // частицы выключены — звёзд нет
         }
-        int count = mode == ParticlesMode.DECREASED ? 3 : 8;
+        int count = mode.equals("DECREASED") ? 3 : 8;
 
         ClientWorld world = client.world;
         Random rnd = world.getRandom();
