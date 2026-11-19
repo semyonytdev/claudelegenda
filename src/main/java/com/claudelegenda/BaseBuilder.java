@@ -334,7 +334,7 @@ public final class BaseBuilder {
                         e(Enchantments.EFFICIENCY, 8), e(Enchantments.FORTUNE, 5), e(Enchantments.UNBREAKING, 5),
                         e(Enchantments.MENDING, 1)));
 
-        // Сундук 2: 3 стака алмазов, 3 стака шаблонов «Тишина», 70 пузырьков опыта
+        // Сундук 2: алмазы, шаблоны «Тишина», опыт, 3 стака зачарованных яблок, 3 стака золотой моркови, 10 тотемов
         chest(w, new BlockPos(cx, y, z),
                 new ItemStack(Items.DIAMOND, 64),
                 new ItemStack(Items.DIAMOND, 64),
@@ -343,7 +343,23 @@ public final class BaseBuilder {
                 new ItemStack(Items.SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE, 64),
                 new ItemStack(Items.SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE, 64),
                 new ItemStack(Items.EXPERIENCE_BOTTLE, 64),
-                new ItemStack(Items.EXPERIENCE_BOTTLE, 6));
+                new ItemStack(Items.EXPERIENCE_BOTTLE, 6),
+                new ItemStack(Items.ENCHANTED_GOLDEN_APPLE, 64),
+                new ItemStack(Items.ENCHANTED_GOLDEN_APPLE, 64),
+                new ItemStack(Items.ENCHANTED_GOLDEN_APPLE, 64),
+                new ItemStack(Items.GOLDEN_CARROT, 64),
+                new ItemStack(Items.GOLDEN_CARROT, 64),
+                new ItemStack(Items.GOLDEN_CARROT, 64),
+                new ItemStack(Items.TOTEM_OF_UNDYING, 1),
+                new ItemStack(Items.TOTEM_OF_UNDYING, 1),
+                new ItemStack(Items.TOTEM_OF_UNDYING, 1),
+                new ItemStack(Items.TOTEM_OF_UNDYING, 1),
+                new ItemStack(Items.TOTEM_OF_UNDYING, 1),
+                new ItemStack(Items.TOTEM_OF_UNDYING, 1),
+                new ItemStack(Items.TOTEM_OF_UNDYING, 1),
+                new ItemStack(Items.TOTEM_OF_UNDYING, 1),
+                new ItemStack(Items.TOTEM_OF_UNDYING, 1),
+                new ItemStack(Items.TOTEM_OF_UNDYING, 1));
 
         // Сундук 3: столы, материалы и финальная книга
         chest(w, new BlockPos(cx + 4, y, z),
@@ -359,12 +375,6 @@ public final class BaseBuilder {
                         e(Enchantments.MENDING, 1)),
                 new ItemStack(Items.COOKED_BEEF, 64),
                 new ItemStack(Items.COOKED_BEEF, 64),
-                new ItemStack(Items.GOLDEN_CARROT, 64),
-                new ItemStack(Items.ENCHANTED_GOLDEN_APPLE, 8),
-                new ItemStack(Items.TOTEM_OF_UNDYING, 1),
-                new ItemStack(Items.TOTEM_OF_UNDYING, 1),
-                new ItemStack(Items.TOTEM_OF_UNDYING, 1),
-                new ItemStack(Items.TOTEM_OF_UNDYING, 1),
                 Books.thanks());
     }
 
