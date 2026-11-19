@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "claude_legenda",
+  "version": "${version}",
+  "name": "Claude Legenda",
+  "description": "Сюжетный мод: серый мир, красные звёзды грусти, записка и тайная затопленная база Клода.",
+  "authors": ["Семён Гридин"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.claudelegenda.ClaudeLegenda"],
+    "client": ["com.claudelegenda.client.ClaudeLegendaClient"]
+  },
+  "mixins": [
+    {
+      "config": "claude_legenda.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
